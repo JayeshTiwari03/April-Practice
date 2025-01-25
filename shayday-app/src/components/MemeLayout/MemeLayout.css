@@ -9,6 +9,13 @@
 .card {
   border: 1px solid grey;
   background-color: beige;
-  min-height: 200px;
-  max-width: 200px;
+  min-height: 400px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  background-size: contain;
+  background-repeat: no-repeat;
 }

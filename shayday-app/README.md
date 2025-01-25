@@ -3,7 +3,9 @@
 ## Shimmer UI - YES
 ## Meme API call - YES
 ## Cards layout flex - YES
-## Accordion
+## Dropdown which has number of memes to be called - YES
+
+## Accordion - THIS
 
 ## Cards Masonry Layout like Pinterest
 
@@ -15,14 +17,16 @@
 ## Sample express code
 
 ## Modal
-## Dropdown
-## Autocomplete
+
+## Autocomplete with meme names from API
+
 ## Custom Hooks
 ## HOC
 ## useReducer Hook
 
-## CSS Variables in css styles
-## labels in input and id and for
+## CSS Variables in css styles - opt
+
+## labels in input and id and for - YES
 
 ## Lazy Loading of images
 ## Pagination/Next API Call on Scroll of screen
