@@ -1,10 +1,15 @@
 # TODO
 
-## Shimmer UI
-## Meme API call
-## Cards Masonry Layout like Pinterest
-## Infinite Scroll
+## Shimmer UI - YES
+## Meme API call - YES
+## Cards layout flex - YES
 ## Accordion
+
+## Cards Masonry Layout like Pinterest
+
+## Infinite Scroll
+
+
 ## Nested Comments
 
 ## Sample express code

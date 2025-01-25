@@ -1,0 +1,14 @@
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid grey;
+  background-color: beige;
+  min-height: 200px;
+  max-width: 200px;
+}
