@@ -5,7 +5,7 @@
 ## Cards layout flex - YES
 ## Dropdown which has number of memes to be called - YES
 
-## Accordion - THIS
+## Accordion - YES
 
 ## Cards Masonry Layout like Pinterest
 
