@@ -1,0 +1,22 @@
+.accordion-container {
+  max-width: 400px;
+  max-height: 800px;
+  background-color: beige;
+  border: 1px solid grey;
+  text-align: left;
+  margin: auto;
+  margin-top: 5px;
+}
+
+.accordion-title {
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid grey;
+  font-weight: 700;
+}
+
+.accordion-body {
+  background-color: bisque;
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid grey;
+  font-weight: 300;
+}

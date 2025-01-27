@@ -31,3 +31,5 @@
 ## Lazy Loading of images
 ## Pagination/Next API Call on Scroll of screen
 ## Preloading of Images
+
+## Make a carousel with images and controls
