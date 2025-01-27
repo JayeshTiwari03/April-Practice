@@ -1,21 +1,25 @@
 .card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
   gap: 20px;
+  padding: 5px;
+  margin: 5px;
+  flex-wrap: wrap;
 }
 
 .card {
   border: 1px solid grey;
   background-color: beige;
-  min-height: 400px;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
 }
 
-img {
+/* img {
   background-size: contain;
   background-repeat: no-repeat;
+} */
+
+.meme-image {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
 }

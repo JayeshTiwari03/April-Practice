@@ -6,25 +6,40 @@ import MemeCount from "../MemeCountDropdown/MemeCount";
 
 const MemeLayout = () => {
   const [memes, setMemes] = useState([]);
-  const [hasMemeCount, setHasMemeCount] = useState(2);
+  const [hasMemeCount, setHasMemeCount] = useState(20);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     fetchMemes();
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, [hasMemeCount]);
 
-  const fetchMemes = () => {
+  const handleScroll = () => {
+    if (window.scrollY + window.innerHeight >= document.body.scrollHeight) {
+      fetchMemes();
+    }
+  };
+
+  const fetchMemes = async () => {
     setIsLoading(true);
     axios
       .get(`https://meme-api.com/gimme/${hasMemeCount}`)
       .then(function (response) {
-        setMemes(response.data.memes);
+        setMemes((memes) => [...memes, ...response.data.memes]);
         setIsLoading(false);
       })
       .catch(function (error) {
         console.error("Error fetching memes!", error);
       })
       .finally(function () {});
+
+      // const data = await fetch(`https://meme-api.com/gimme/${hasMemeCount}`);
+      // const json = await data.json();
+      // setMemes((memes) => [...memes, ...json.memes]);
   };
 
   return (
@@ -34,8 +49,11 @@ const MemeLayout = () => {
         <div className="card-container">
           {memes?.map((meme) => (
             <div className="card">
-              {meme.title}
-              <img src={meme.preview[0]} alt={meme.title} />
+              <img
+                className="meme-image"
+                src={meme.preview[2]}
+                alt={meme.title}
+              />
             </div>
           ))}
         </div>
